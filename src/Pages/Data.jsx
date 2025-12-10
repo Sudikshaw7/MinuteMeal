@@ -1,6 +1,6 @@
 import React from 'react'
 
-const foodData = [
+const Data = [
   { id: 1, name: "Margherita Pizza", price: 199, image: "https://picsum.photos/300/200?food=1" },
   { id: 2, name: "Veg Burger", price: 99, image: "https://picsum.photos/300/200?food=2" },
   { id: 3, name: "Pasta Alfredo", price: 149, image: "https://picsum.photos/300/200?food=3" },
@@ -9,4 +9,4 @@ const foodData = [
   { id: 6, name: "Chocolate Shake", price: 89, image: "https://picsum.photos/300/200?food=6" }
 ];
 
-export default foodData;
+export default Data;
