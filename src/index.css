@@ -1,3 +1,4 @@
+/* --- Root & Global Styles --- */
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -13,6 +14,23 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: rgb(72, 157, 72) !important; /* main app background */
+  color: #212529;
+}
+
+/* Headings */
+h1, h2, h3 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* Links */
 a {
   font-weight: 500;
   color: #000000;
@@ -22,20 +40,7 @@ a:hover {
   color: #535bf2;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-  background-color: rgb(168, 244, 168);
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
+/* Buttons */
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -44,17 +49,128 @@ button {
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
+  color: #fff;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: border-color 0.25s, background-color 0.25s;
 }
 button:hover {
   border-color: #646cff;
+  background-color: #333333;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/* Input Fields */
+input.form-control {
+  border-radius: 20px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.9rem;
+}
+
+/* Container adjustments */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* --- Cards --- */
+.card {
+  border-radius: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card h5 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.card p {
+  margin: 0.25rem 0;
+}
+
+/* Success button in card */
+.card .btn-success {
+  background-color: #28a745;
+  border: none;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+.card .btn-success:hover {
+  background-color: #218838;
+}
+
+/* --- Navbar tweaks --- */
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.navbar .btn-outline-light {
+  margin-left: 0.5rem;
+}
+
+/* --- Login Page --- */
+.login-container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  max-width: 400px;
+  margin: 2rem auto;
+  color: #212529;
+}
+.login-container input {
+  height: 45px;
+  font-size: 1rem;
+}
+.login-container button {
+  height: 45px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* --- Responsive --- */
+@media (max-width: 992px) {
+  .col-md-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .navbar .d-flex {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .navbar input.form-control {
+    max-width: 100%;
+  }
+
+  .login-container {
+    padding: 1.5rem;
+  }
+}
+
+/* Light mode overrides */
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -65,5 +181,87 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+    color: #000;
+  }
+  .login-container {
+    background: #f9f9f9;
+  }
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.navbar .btn-outline-light {
+  margin-left: 0.5rem;
+}
+
+.navbar input.form-control {
+  border-radius: 20px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.9rem;
+}
+
+/* Mobile: stack search + buttons */
+@media (max-width: 768px) {
+  .navbar .d-flex {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .navbar input.form-control {
+    max-width: 100%;
+  }
+}
+
+/* Cards styling */
+.card {
+  border-radius: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card h5 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.card p {
+  margin: 0.25rem 0;
+}
+
+.card .btn-success {
+  background-color: #28a745;
+  border: none;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+.card .btn-success:hover {
+  background-color: #218838;
+}
+
+/* Responsive cards */
+@media (max-width: 992px) {
+  .col-md-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
