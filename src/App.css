@@ -41,11 +41,3 @@
   color: #888;
 }
 
-.footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-.footer-custom{
-  background-color: chartreuse !important;
-}

@@ -1,14 +1,19 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
+import { useNavigate } from "react-router-dom"
 
-function ItemCard({ title, description, price, image }) {
+function ItemCard({ title, description, viewmore, image }) {
+const navigate = useNavigate();
+const handleViewMore = () => {
+  navigate(`/Menu/${id}`);
+};
   return (
-    <Card style={{ width: "18rem" }} className="m-3 shadow">
+    <Card className="m-3 shadow">
       <Card.Img variant="top" src={image} />
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         <Card.Text>{description}</Card.Text>
-        <Button variant="primary">Add to Cart - ₹{price}</Button>
+        <Button variant="primary" onClick={handleViewMore}>Browse More{viewmore}</Button>
       </Card.Body>
     </Card>
   );
