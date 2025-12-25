@@ -2,9 +2,9 @@ import React from "react";
 
 function Cart() {
   return (
-    <div className="container mt-5">
+    <div className="container mt-5 pt-5">
       <h2>Your Cart</h2>
-      <p>Items you added will appear here.</p>
+      <p className="text-muted">Your selected items will appear here.</p>
     </div>
   );
 }

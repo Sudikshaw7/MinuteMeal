@@ -1,0 +1,104 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "test@example.com",
+      "password": "password123",
+      "name": "Test User"
+    },
+    {
+      "id": 2,
+      "email": "john@gmail.com",
+      "password": "john123",
+      "name": "John Doe"
+    }
+  ],
+  "menu": [
+    {
+      "id": 1,
+      "title": "Paneer Malai Masala",
+      "price": 220,
+      "servings": 4,
+      "dishstyle": "North Indian",
+      "image": "/images/food/PaneerMalaiMasala.png",
+      "category": "veg"
+    },
+    {
+      "id": 2,
+      "title": "Soba Noodle Salad",
+      "price": 150,
+      "servings": 6,
+      "dishstyle": "Thai",
+      "image": "/images/food/SobaNoodleSalad.png",
+      "category": "veg"
+    },
+    {
+      "id": 3,
+      "title": "Tofu Chow Mein",
+      "price": 200,
+      "servings": 4,
+      "dishstyle": "Chinese",
+      "image": "/images/food/TofuChowMein.png",
+      "category": "veg"
+    },
+    {
+      "id": 4,
+      "title": "Masala Dosa",
+      "price": 120,
+      "servings": 2,
+      "dishstyle": "South Indian",
+      "image": "/images/food/masalaDosa.png",
+      "category": "veg"
+    },
+    {
+      "id": 5,
+      "title": "Chicken Biryani",
+      "price": 300,
+      "image": null,
+      "category": "nonveg"
+    },
+    {
+      "id": 6,
+      "title": "Mutton Curry",
+      "price": 350,
+      "image": null,
+      "category": "nonveg"
+    },
+    {
+      "id": 7,
+      "title": "Fish Fry",
+      "price": 280,
+      "image": null,
+      "category": "nonveg"
+    },
+    {
+      "id": 8,
+      "title": "Gulab Jamun",
+      "price": 120,
+      "image": null,
+      "category": "dessert"
+    },
+    {
+      "id": 9,
+      "title": "Brownie",
+      "price": 150,
+      "image": null,
+      "category": "dessert"
+    },
+    {
+      "id": 10,
+      "title": "Cold Coffee",
+      "price": 80,
+      "image": null,
+      "category": "beverage"
+    },
+    {
+      "id": 11,
+      "title": "Milkshake",
+      "price": 120,
+      "image": null,
+      "category": "beverage"
+    }
+  ],
+  "orders": []
+}
