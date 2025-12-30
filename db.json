@@ -20,7 +20,7 @@
       "price": 220,
       "servings": 4,
       "dishstyle": "North Indian",
-      "image": "/images/food/PaneerMalaiMasala.png",
+      "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=400&h=300&fit=crop",
       "category": "veg"
     },
     {
@@ -29,7 +29,7 @@
       "price": 150,
       "servings": 6,
       "dishstyle": "Thai",
-      "image": "/images/food/SobaNoodleSalad.png",
+      "image": "https://images.unsplash.com/photo-1617093727343-374698b1b08d?w=400&h=300&fit=crop",
       "category": "veg"
     },
     {
@@ -38,7 +38,7 @@
       "price": 200,
       "servings": 4,
       "dishstyle": "Chinese",
-      "image": "/images/food/TofuChowMein.png",
+      "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=400&h=300&fit=crop",
       "category": "veg"
     },
     {
@@ -47,56 +47,70 @@
       "price": 120,
       "servings": 2,
       "dishstyle": "South Indian",
-      "image": "/images/food/masalaDosa.png",
+      "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=400&h=300&fit=crop",
       "category": "veg"
     },
     {
       "id": 5,
       "title": "Chicken Biryani",
       "price": 300,
-      "image": null,
+      "servings": 3,
+      "dishstyle": "Hyderabadi",
+      "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=400&h=300&fit=crop",
       "category": "nonveg"
     },
     {
       "id": 6,
       "title": "Mutton Curry",
       "price": 350,
-      "image": null,
+      "servings": 3,
+      "dishstyle": "North Indian",
+      "image": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=400&h=300&fit=crop",
       "category": "nonveg"
     },
     {
       "id": 7,
       "title": "Fish Fry",
       "price": 280,
-      "image": null,
+      "servings": 2,
+      "dishstyle": "Kerala Style",
+      "image": "https://images.unsplash.com/photo-1534766438357-2b18d4c7a61d?w=400&h=300&fit=crop",
       "category": "nonveg"
     },
     {
       "id": 8,
       "title": "Gulab Jamun",
       "price": 120,
-      "image": null,
+      "servings": 4,
+      "dishstyle": "Indian",
+      "image": "https://images.unsplash.com/photo-1589301773859-341ec70501e7?w=400&h=300&fit=crop",
       "category": "dessert"
     },
     {
       "id": 9,
       "title": "Brownie",
       "price": 150,
-      "image": null,
+      "servings": 2,
+      "dishstyle": "Continental",
+      "image": "https://images.unsplash.com/photo-1607920591413-4ec007e70023?w=400&h=300&fit=crop",
       "category": "dessert"
     },
     {
       "id": 10,
       "title": "Cold Coffee",
       "price": 80,
-      "image": null,
+      "servings": 1,
+      "dishstyle": "Continental",
+      "image": "https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?w=400&h=300&fit=crop",
       "category": "beverage"
     },
     {
       "id": 11,
       "title": "Milkshake",
       "price": 120,
-      "image": null,
+      "servings": 1,
+      "dishstyle": "Continental",
+      "image": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400&h=300&fit=crop",
       "category": "beverage"
     }
   ],
